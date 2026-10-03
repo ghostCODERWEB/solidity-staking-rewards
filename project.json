@@ -1,0 +1,12 @@
+{
+  "name": "solidity-staking-rewards",
+  "title": "Checkpoint staking rewards",
+  "contract": "StakingRewards",
+  "description": "ERC20 staking pool with funded reward schedules, per-user checkpoints and principal-preserving withdrawals.",
+  "args": [
+    "$TOKEN",
+    "$REWARD_TOKEN",
+    "$ADMIN"
+  ],
+  "assumptions": "Stake and reward assets must differ. Reward schedules are funded on notification; leftover scheduled rewards roll into the next schedule. Idle emissions and integer dust remain in the contract and cannot be swept by the owner. Owner controls future schedules."
+}
